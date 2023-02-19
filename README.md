@@ -1,1 +1,1 @@
-# JS-Mini-Project
+# FrontEnd-Mini-Project
