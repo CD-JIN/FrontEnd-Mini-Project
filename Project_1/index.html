@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas></canvas>
-    <input id="line-width" type="range" min="1" max="10" value="5" step="0.5" />
-    <div>
+    <div class="color-options">
       <input type="color" id="color" />
       <div
         class="color-option"
@@ -39,16 +37,6 @@
       ></div>
       <div
         class="color-option"
-        style="background-color: #e67e22"
-        data-color="#e67e22"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #e74c3c"
-        data-color="#e74c3c"
-      ></div>
-      <div
-        class="color-option"
         style="background-color: #ecf0f1"
         data-color="#ecf0f1"
       ></div>
@@ -59,26 +47,31 @@
       ></div>
       <div
         class="color-option"
-        style="background-color: #d35400"
-        data-color="#d35400"
-      ></div>
-      <div
-        class="color-option"
         style="background-color: #c0392b"
         data-color="#c0392b"
       ></div>
-      <div
-        class="color-option"
-        style="background-color: #7f8c8d"
-        data-color="#7f8c8d"
-      ></div>
     </div>
-    <button id="mode-btn">Fill</button>
-    <button id="reset-btn">Reset</button>
-    <button id="eraser-btn">Erase</button>
-    <input type="file" accept="image/*" id="file" />
-    <input type="text" placeholder="Write and then double click" id="text" />
-    <button id="save">Save Image</button>
+    <canvas></canvas>
+    <div class="btns">
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.5"
+      />
+      <button id="mode-btn">Fill</button>
+      <button id="reset-btn">Reset</button>
+      <button id="eraser-btn">Erase</button>
+      <label for="file">
+        Add Photo
+        <input type="file" accept="image/*" id="file" />
+      </label>
+      <input type="text" placeholder="Add text" id="text" />
+      <button id="save">Save Image</button>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
